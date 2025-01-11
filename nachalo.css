@@ -1,0 +1,308 @@
+:root {
+    --primary-font: 'Arial', sans-serif;
+    --header-bg: #FDF0D5;
+    --bg-color: #FFED92;
+    --text-color: #000000;
+    --highlight-color: #f4a100;
+    --section-bg-color: #848484    ;
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center all items horizontally */
+    align-items: center; /* Vertically center the content */
+    padding: 10px 10px;
+    background-color: var(--header-bg);
+    position: relative;
+}
+
+.top-row {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Make sure it takes up the full width */
+        position: relative;
+}
+.top-row img{
+    width: 7%;
+    border-radius: 22px;
+    
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1; /* Allow the title to take available space */
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+}
+hr {
+    border: none; /* Remove the default styles */
+    border-top: 3px solid black; /* Customize the thickness and color */
+    width: auto; /* Ensure it spans the full width */
+    margin: 0; /* Remove all default margin */
+    padding: 5px; /* Ensure no padding */
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--header-bg);
+    
+}
+
+.menu-row {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+}
+
+a:link {
+    color: purple;
+}
+
+
+
+a:visited {
+     color:orange; 
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+nav a:hover,nav a.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-size: 20px; /* Increase font size */
+    padding: 5px 10px; /* Adjust padding to make it larger */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.search-container {
+        color: #FFED92; /* Yellow background */
+        position: absolute;
+        top: 50%; /* Vertically center the search bar */
+        left: 75%; /* Horizontally center the search bar */
+        transform: translate(-50%, -50%); /* Correct the alignment */
+        display: flex;
+        align-items: center;
+        gap: 15px;
+}
+
+.search-container input {
+    width: 250px;
+    padding: 8px 35px 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #FFED92;
+    border-radius: 20px;
+    color: #848484; 
+    font-family: 'Segoe UI', sans-serif;
+    background-color:#FFED92 ;
+}
+
+.search-container .icon {
+    position: absolute;
+    right: 15px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.profile-btn img {
+    width: auto; /* Automatically adjust the width */
+    height: 20px; /* Specify a consistent height */
+    border-radius: 0; /* Remove the rounded corners */
+    object-fit: contain; /* Ensure the entire image fits within its container */
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.imgtitle {
+    position: absolute;
+    bottom: -5%;
+    left: 56px;
+    font-size: 35px;
+    font-family:'Segoe UI Black', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blurred-image {
+    height: 150px;
+    filter:opacity(0.6);
+    width: 100%;
+}
+.first-content {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 60px 60px 0 130px;
+    
+}
+
+.first-content img {
+    margin-left: 100px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.text-section1 {
+    padding-right: 10px;
+    padding-left: 30px;
+    background-color: #FFC300;
+    border: none;
+    border-radius: 20px;
+    margin-right: 50px;
+    font-family: 'Segoe UI Black', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.cropimg1 {
+    position: relative;
+    width: 1200px;
+    z-index: 2;
+}
+
+.cropimg2 {
+    position: relative;
+    margin-left: 493px;
+    top: -40px;
+    width: 120px;
+    z-index: 1;
+}
+
+.second-content-image {
+    position: absolute;
+    left: 0;
+    padding-top: 26px;
+
+    width: 300px;
+    z-index: 3;
+    border-radius: 0 0 25px 0;
+}
+
+.second-content {
+    background-color: #FFC300;
+    margin-top: -95px;
+    z-index: 2;
+    position: relative;
+    text-align: right;
+    font-family: 'Segoe UI Black', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 300px;
+}
+
+.second-content h2 {
+    padding: 50px 240px 50px 0;
+    font-size: 25px;
+    
+}
+
+.footer {
+    background-color: #FDF0D5;
+    padding: 20px 40px;
+    font-family: 'Segoe UI', 'regular';
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.certificates img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 3px solid #000000;
+}
+
+.company-logo img {
+    height: 50px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #000000;
+}
